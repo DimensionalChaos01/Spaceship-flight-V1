@@ -3,7 +3,7 @@ using UnityEngine;
 public class shipmovement : MonoBehaviour
 {
     public float maxspeed = 1f;
-    float acceleration = 0.075f;
+    float acceleration = 0.175f;
     float speed = 0;
     void Start()
     {
@@ -30,26 +30,26 @@ public class shipmovement : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            transform.Rotate(Vector3.up * 0.02f);
-            transform.Translate(Vector3.forward * 0.02f);
+            transform.Rotate(Vector3.up * 0.12f);
+            transform.Translate(Vector3.forward * 0.12f);
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            transform.Rotate(Vector3.down * 0.02f);
-            transform.Translate(Vector3.forward * 0.02f);
+            transform.Rotate(Vector3.down * 0.12f);
+            transform.Translate(Vector3.forward * 0.12f);
         }
 
         if (Input.GetKey(KeyCode.W))
         {
-            transform.Rotate(Vector3.left * 0.02f);
-            transform.Translate(Vector3.forward *  0.02f);
+            transform.Rotate(Vector3.left * 0.12f);
+            transform.Translate(Vector3.forward *  0.12f);
         }
 
         if (Input.GetKey(KeyCode.S))
         {
-            transform.Rotate(Vector3.right * 0.02f);
-            transform.Translate(Vector3.forward * 0.02f);
+            transform.Rotate(Vector3.right * 0.12f);
+            transform.Translate(Vector3.forward * 0.12f);
         }
 
         if (Input.GetKey(KeyCode.Q))
